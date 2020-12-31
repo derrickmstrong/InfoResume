@@ -1,0 +1,92 @@
+#inforesume {
+  display: grid;
+  gap: 50px 25px;
+  grid-template-areas:
+    '. name name name .'
+    'workexp profilepic profilepic profilepic intro'
+    'workexp title title title availableon'
+    'leftright solutions solutions solutions availablefor'
+    'infj main main main worklife'
+    'topartists main main main mytime'
+    'projects skills skills skills books'
+    'tech edu edu drinks moreinfo';
+}
+
+.name {
+  grid-area: name;
+  letter-spacing: .5em;
+  font-variant: small-caps;
+  font-size: 1.5em;
+}
+.work-exp {
+  grid-area: workexp;
+}
+.profile-pic {
+  grid-area: profilepic;
+  text-align: center;
+}
+.intro {
+    grid-area: intro;
+    display: flex;
+    position: relative;
+    left: -200px;
+    background: #05d655;
+    width: 225%;
+}
+.title {
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+}
+.available-on {
+    grid-area: availableon;
+}
+.left-right {
+    grid-area: leftright;
+}
+.solutions {
+    grid-area: solutions;
+    background-color: blueviolet;
+}
+.available-for {
+    grid-area: availablefor;
+}
+.infj {
+  grid-area: infj;
+}
+.main {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work-life {
+  grid-area: worklife;
+}
+.top-artists {
+  grid-area: topartists;
+}
+.my-time {
+  grid-area: mytime;
+}
+.projects {
+  grid-area: projects;
+}
+.skills {
+  grid-area: skills;
+}
+.books {
+  grid-area: books;
+}
+.tech {
+  grid-area: tech;
+}
+.edu {
+  grid-area: edu;
+}
+.drinks {
+  grid-area: drinks;
+}
+.more-info {
+  grid-area: moreinfo;
+}
