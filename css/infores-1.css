@@ -27,10 +27,22 @@
   margin: 3px 0;
 }
 
-.sect-header { font-size: 2vw; 
-color: var(--georgiatech); }
+.sect-header {
+  font-size: 2vw;
+  color: var(--georgiatech);
+}
 
-.upsize { font-variant: small-caps; }
+.upsize {
+  font-variant: small-caps;
+}
+
+.go-big,
+.go-big > strong {
+  letter-spacing: 0.25em;
+  font-size: 4vw;
+  font-variant: small-caps;
+  text-align: center;
+}
 
 .container {
   background-color: var(--blackbird);
@@ -53,9 +65,6 @@ color: var(--georgiatech); }
 
 .name {
   grid-area: name;
-  letter-spacing: 0.5em;
-  font-size: 3vw;
-  text-align: center;
 }
 .work-exp {
   grid-area: workexp;
@@ -97,8 +106,6 @@ color: var(--georgiatech); }
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 600px;
-  height: 600px;
 }
 .work-life {
   grid-area: worklife;
