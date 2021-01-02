@@ -1,8 +1,47 @@
+:root {
+  --georgiatech: #feb10a;
+  --blackbird: #2c2c2c;
+  --whitecastle: aliceblue;
+}
+
+* {
+  font-size: 1.25vw;
+}
+
+.text-2 {
+  font-size: 2vw;
+}
+
+.text-7 {
+  font-size: 7vw;
+}
+
+.text-10 {
+  font-size: 10vw;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--whitecastle);
+  margin: 3px 0;
+}
+
+.sect-header { font-size: 2vw; 
+color: var(--georgiatech); }
+
+.upsize { font-variant: small-caps; }
+
+.container {
+  background-color: var(--blackbird);
+  color: var(--whitecastle);
+}
+
 #inforesume {
   display: grid;
-  gap: 50px 25px;
+  gap: 25px 25px;
   grid-template-areas:
-    '. name name name .'
+    'name name name name name'
     'workexp profilepic profilepic profilepic intro'
     'workexp title title title availableon'
     'leftright solutions solutions solutions availablefor'
@@ -14,9 +53,9 @@
 
 .name {
   grid-area: name;
-  letter-spacing: .5em;
-  font-variant: small-caps;
-  font-size: 1.5em;
+  letter-spacing: 0.5em;
+  font-size: 3vw;
+  text-align: center;
 }
 .work-exp {
   grid-area: workexp;
@@ -26,30 +65,29 @@
   text-align: center;
 }
 .intro {
-    grid-area: intro;
-    display: flex;
-    position: relative;
-    left: -200px;
-    background: #05d655;
-    width: 225%;
+  grid-area: intro;
+  display: flex;
+  position: relative;
+  left: -100px;
+  background: #05d655;
+  width: 125%;
 }
 .title {
-    grid-area: title;
-    display: flex;
-    flex-direction: column;
+  grid-area: title;
+  display: flex;
+  flex-direction: column;
 }
 .available-on {
-    grid-area: availableon;
+  grid-area: availableon;
 }
 .left-right {
-    grid-area: leftright;
+  grid-area: leftright;
 }
 .solutions {
-    grid-area: solutions;
-    background-color: blueviolet;
+  grid-area: solutions;
 }
 .available-for {
-    grid-area: availablefor;
+  grid-area: availablefor;
 }
 .infj {
   grid-area: infj;
@@ -59,6 +97,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 600px;
+  height: 600px;
 }
 .work-life {
   grid-area: worklife;
@@ -89,4 +129,11 @@
 }
 .more-info {
   grid-area: moreinfo;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+img {
+  filter: invert(100%);
 }
