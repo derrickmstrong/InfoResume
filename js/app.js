@@ -71,6 +71,33 @@ var backend_data = [
   },
 ];
 
+var digital_data = [
+  {
+    value: 90,
+    color: '#F7464A',
+    highlight: '#FF5A5E',
+    label: 'Google Tag Manager',
+  },
+  {
+    value: 70,
+    color: '#46BFBD',
+    highlight: '#5AD3D1',
+    label: 'Campaign Manager',
+  },
+  {
+    value: 50,
+    color: '#FDB45C',
+    highlight: '#FFC870',
+    label: 'Microsoft Azure',
+  },
+  {
+    value: 80,
+    color: '#949FB1',
+    highlight: '#A8B3C5',
+    label: 'Automation',
+  }
+];
+
 // Global + Custom Chart Config Options
 var options = {
   bezierCurve: false,
@@ -91,6 +118,8 @@ var options = {
 // Load Chart
 var ctx_front = document.getElementById('frontend').getContext('2d');
 var ctx_back = document.getElementById('backend').getContext('2d');
+var ctx_digital = document.getElementById('digital').getContext('2d');
 
 var frontendChart = new Chart(ctx_front).Doughnut(frontend_data, options);
 var backendChart = new Chart(ctx_back).Doughnut(backend_data, options);
+var digitalChart = new Chart(ctx_digital).Doughnut(digital_data, options);

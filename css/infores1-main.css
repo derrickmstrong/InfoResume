@@ -8,6 +8,13 @@
   font-size: 1.25vw;
 }
 
+a {
+  color: var(--georgiatech);
+}
+a:hover {
+  color: var(--whitecastle);
+}
+
 .text-2 {
   font-size: 2vw;
 }
@@ -47,6 +54,9 @@
 .container {
   background-color: var(--blackbird);
   color: var(--whitecastle);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
 }
 
 #inforesume {
@@ -54,13 +64,13 @@
   gap: 25px 5px;
   grid-template-areas:
     'name name name name name'
-    'workexp profilepic profilepic profilepic intro'
-    'workexp title title title availableon'
+    'infj profilepic profilepic profilepic intro'
+    'infj title title title availableon'
     'leftright solutions solutions solutions availablefor'
-    'infj main main main tech'
+    'workexp main main main tech'
     'topartists skills skills skills books'
-    'projects skills skills skills mytime'
-    'worklife edu edu drinks moreinfo';
+    'projects edu edu edu mytime'
+    'worklife worklife drinks drinks moreinfo';
 }
 
 .name {
@@ -68,6 +78,10 @@
 }
 .work-exp {
   grid-area: workexp;
+}
+.exp {
+  display: flex;
+  justify-content: space-evenly;
 }
 .profile-pic {
   grid-area: profilepic;
@@ -106,6 +120,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 400px;
 }
 .work-life {
   grid-area: worklife;
@@ -159,7 +174,7 @@ img {
   display: inline-block;
 }
 canvas {
-  height: 100%;
+  height: 50%;
 }
 
 /* Media Queries */
