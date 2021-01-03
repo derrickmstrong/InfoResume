@@ -51,7 +51,7 @@
 
 #inforesume {
   display: grid;
-  gap: 25px 25px;
+  gap: 25px 5px;
   grid-template-areas:
     'name name name name name'
     'workexp profilepic profilepic profilepic intro'
@@ -75,11 +75,11 @@
 }
 .intro {
   grid-area: intro;
-  display: flex;
-  position: relative;
-  left: -100px;
+  /* display: flex; */
+  /* position: relative;
+  left: -50px;
   background: #05d655;
-  width: 125%;
+  width: 90%; */
 }
 .title {
   grid-area: title;
@@ -163,7 +163,7 @@ canvas {
 }
 
 /* Media Queries */
-@media (max-width: 750px) {
+@media (max-width: 799px) {
   * {
     font-size: 1em;
     text-align: center;

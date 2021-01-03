@@ -15,11 +15,13 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/inforesume/css/infores-1.css" />
+    <link href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/inforesume/css/infores1-availablefor.css" />
+    <link rel="stylesheet" href="/inforesume/css/infores1-main.css" />
     <title>InfoResume</title>
   </head>
   <body>
-    <div class="container border my-4 py-5 px-3" id="inforesume">
+    <div class="container my-4 py-5 px-3" id="inforesume">
       <div class="name">
         <div class="go-big">derrick <strong>strong</strong></div>
       </div>
@@ -38,7 +40,24 @@
       </div>
       <div class="solutions"><div class="sect-header">Solutions</div></div>
       <div class="available-for">
-        <div class="sect-header">Available For</div>
+        <div class="sect-header sticky">Available For</div>
+        <ul class="notes">
+          <li>
+            <a href="#">
+              <p>Text Content #1</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>Text Content #2</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>Text Content #3</p>
+            </a>
+          </li>
+        </ul>
       </div>
       <div class="infj">
         <div class="sect-header">INFJ</div>
@@ -54,7 +73,7 @@
         </ul>
       </div>
       <div class="main">
-        <img src="./assets/main.svg" width="600" alt="" class="img-fluid" />
+        <img src="./assets/main.svg" width="100%" alt="" class="img-fluid" />
       </div>
       <div class="work-life"><div class="sect-header">Work/Life</div></div>
       <div class="top-artists">
@@ -94,14 +113,24 @@
       <div class="skills"><div class="sect-header">Skills</div></div>
       <div class="books"><div class="sect-header">Books</div></div>
       <div class="tech">
-        <div class="sect-header">Tech</div>
+        <div class="sect-header">Tech Used</div>
         <div class="col-xs-4">
           <div class="panel panel-default">
             <div class="panel-content text-center">
-              <canvas id="myDonutChart" class="chart"></canvas>
+              <canvas id="frontend" class="chart"></canvas>
             </div>
             <div class="panel-heading">
               <h3 class="panel-title text-center">Frontend</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-4 mt-5">
+          <div class="panel panel-default">
+            <div class="panel-content text-center">
+              <canvas id="backend" class="chart"></canvas>
+            </div>
+            <div class="panel-heading">
+              <h3 class="panel-title text-center">Backend</h3>
             </div>
           </div>
         </div>

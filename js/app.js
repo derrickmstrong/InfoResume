@@ -1,5 +1,5 @@
 // Data
-var data = [
+var frontend_data = [
   {
     value: 100,
     color: '#F7464A',
@@ -16,7 +16,7 @@ var data = [
     value: 100,
     color: '#FDB45C',
     highlight: '#FFC870',
-    label: 'JS',
+    label: 'Javascript',
   },
   {
     value: 60,
@@ -29,6 +29,45 @@ var data = [
     color: '#4D5360',
     highlight: '#616774',
     label: 'Laravel',
+  },
+  {
+    value: 20,
+    color: '#1cda3b',
+    highlight: '#0ae02e',
+    label: 'C#',
+  },
+];
+
+var backend_data = [
+  {
+    value: 80,
+    color: '#F7464A',
+    highlight: '#FF5A5E',
+    label: 'MySQL',
+  },
+  {
+    value: 80,
+    color: '#46BFBD',
+    highlight: '#5AD3D1',
+    label: 'MongoDB',
+  },
+  {
+    value: 50,
+    color: '#FDB45C',
+    highlight: '#FFC870',
+    label: 'PostgresSQL',
+  },
+  {
+    value: 80,
+    color: '#949FB1',
+    highlight: '#A8B3C5',
+    label: 'SQL',
+  },
+  {
+    value: 60,
+    color: '#4D5360',
+    highlight: '#616774',
+    label: 'PHP',
   },
 ];
 
@@ -50,5 +89,8 @@ var options = {
 };
 
 // Load Chart
-var ctx = document.getElementById('myDonutChart').getContext('2d');
-var myDoughnutChart = new Chart(ctx).Doughnut(data, options);
+var ctx_front = document.getElementById('frontend').getContext('2d');
+var ctx_back = document.getElementById('backend').getContext('2d');
+
+var frontendChart = new Chart(ctx_front).Doughnut(frontend_data, options);
+var backendChart = new Chart(ctx_back).Doughnut(backend_data, options);
