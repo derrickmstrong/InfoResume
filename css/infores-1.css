@@ -57,10 +57,10 @@
     'workexp profilepic profilepic profilepic intro'
     'workexp title title title availableon'
     'leftright solutions solutions solutions availablefor'
-    'infj main main main worklife'
-    'topartists main main main mytime'
-    'projects skills skills skills books'
-    'tech edu edu drinks moreinfo';
+    'infj main main main tech'
+    'topartists skills skills skills books'
+    'projects skills skills skills mytime'
+    'worklife edu edu drinks moreinfo';
 }
 
 .name {
@@ -116,6 +116,11 @@
 .my-time {
   grid-area: mytime;
 }
+.clocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .projects {
   grid-area: projects;
 }
@@ -142,5 +147,85 @@
 }
 
 img {
-  filter: invert(100%);
+  filter: brightness(25%) invert(100%);
+}
+
+/* Charts */
+.chart {
+  /* vertical-align: middle; */
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+}
+canvas {
+  height: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 750px) {
+  * {
+    font-size: 1em;
+    text-align: center;
+  }
+  .text-2 {
+    font-size: 2em;
+  }
+  .text-7 {
+    font-size: 5em;
+  }
+  .text-10 {
+    font-size: 8em;
+  }
+  .line {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .sect-header {
+    font-size: 2em;
+    color: var(--georgiatech);
+  }
+  #inforesume {
+    grid-template-areas:
+      'profilepic'
+      'name'
+      'intro'
+      'main'
+      'title'
+      'availableon'
+      'availablefor'
+      'workexp' 'solutions'
+      'leftright'
+      'infj'
+      'tech'
+      'topartists'
+      'skills'
+      'books'
+      'projects'
+      'mytime'
+      'worklife'
+      'edu'
+      'drinks'
+      'moreinfo';
+  }
+  img {
+    width: 70%;
+  }
+  .intro {
+    left: 0px;
+    background: #05d655;
+    width: 100%;
+  }
+  .clocks {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .clock-work,
+  .clock-play,
+  .grad-cap,
+  .teabag {
+    width: 40%;
+  }
 }
