@@ -81,7 +81,7 @@ a:hover {
 }
 .exp {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
 }
 .profile-pic {
   grid-area: profilepic;
