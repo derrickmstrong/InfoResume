@@ -25,7 +25,7 @@ var frontend_data = [
     label: 'React',
   },
   {
-    value: 40,
+    value: 20,
     color: '#4D5360',
     highlight: '#616774',
     label: 'Laravel',
@@ -35,6 +35,12 @@ var frontend_data = [
     color: '#1cda3b',
     highlight: '#0ae02e',
     label: 'C#',
+  },
+  {
+    value: 30,
+    color: '#1c68da',
+    highlight: '#2e80fa',
+    label: 'Vue',
   },
 ];
 

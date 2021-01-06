@@ -15,6 +15,13 @@ a:hover {
   color: var(--whitecastle);
 }
 
+.xp-date {
+  background-color: var(--georgiatech);
+  display: flex;
+  justify-content: center;
+  font-size: large;
+}
+
 .text-2 {
   font-size: 2vw;
 }
@@ -161,7 +168,7 @@ a:hover {
   justify-content: end;
 }
 
-img {
+.invert {
   filter: brightness(25%) invert(100%);
 }
 
