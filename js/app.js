@@ -58,7 +58,7 @@ var backend_data = [
     label: 'MongoDB',
   },
   {
-    value: 50,
+    value: 30,
     color: '#FDB45C',
     highlight: '#FFC870',
     label: 'PostgresSQL',
@@ -91,17 +91,17 @@ var digital_data = [
     label: 'Campaign Manager',
   },
   {
-    value: 50,
+    value: 60,
     color: '#FDB45C',
     highlight: '#FFC870',
-    label: 'Microsoft Azure',
+    label: 'Google Web Designer',
   },
   {
     value: 80,
     color: '#949FB1',
     highlight: '#A8B3C5',
     label: 'Automation',
-  }
+  },
 ];
 
 // Global + Custom Chart Config Options

@@ -20,6 +20,15 @@ a:hover {
   display: flex;
   justify-content: center;
   font-size: large;
+  border-radius: 2px;
+}
+.xp-card {
+  background: #fafafa;
+  color: var(--blackbird);
+  padding: 10px;
+  margin-top: -5px;
+  margin-bottom: 20px;
+  border-radius: 0px 0px 2px 2px;
 }
 
 .text-2 {
@@ -35,10 +44,9 @@ a:hover {
 }
 
 .line {
-  width: 100%;
+  width: 75%;
   height: 2px;
   background-color: var(--whitecastle);
-  margin: 3px 0;
 }
 
 .sect-header {
@@ -61,9 +69,9 @@ a:hover {
 .container {
   background-color: var(--blackbird);
   color: var(--whitecastle);
-  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
-  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
-  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  -moz-box-shadow: 5px 5px 7px rgba(33, 33, 33, 1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
 }
 
 #inforesume {
@@ -85,6 +93,18 @@ a:hover {
 }
 .work-exp {
   grid-area: workexp;
+  width: 80%;
+}
+.work-exp li {
+  list-style: none;
+  margin-left: -20px;
+}
+.work-exp li::before {
+  content: '💻 ';
+}
+.xp-date + div > p {
+  font-size: 1.25em;
+  text-align: center;
 }
 .exp {
   display: flex;
@@ -96,11 +116,6 @@ a:hover {
 }
 .intro {
   grid-area: intro;
-  /* display: flex; */
-  /* position: relative;
-  left: -50px;
-  background: #05d655;
-  width: 90%; */
 }
 .title {
   grid-area: title;
@@ -165,6 +180,7 @@ a:hover {
   grid-area: moreinfo;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: end;
 }
 
@@ -182,6 +198,12 @@ a:hover {
 }
 canvas {
   height: 50%;
+}
+
+.creative-cloud {
+  display: flex;
+  justify-content: center;
+  flex-wrap: row;
 }
 
 /* Media Queries */
@@ -218,7 +240,8 @@ canvas {
       'title'
       'availableon'
       'availablefor'
-      'workexp' 'solutions'
+      'workexp'
+      'solutions'
       'leftright'
       'infj'
       'tech'
@@ -249,5 +272,17 @@ canvas {
   .grad-cap,
   .teabag {
     width: 40%;
+  }
+  .ai,
+  .ps,
+  .id {
+    padding-top: 25px;
+    width: 30%;
+  }
+  .creative-cloud {
+    align-items: center;
+  }
+  .school {
+    font-size: smaller;
   }
 }
