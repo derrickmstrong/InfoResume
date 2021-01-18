@@ -155,7 +155,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 400px;
+  min-width: 200px;
 }
 .work-life {
   grid-area: worklife;
