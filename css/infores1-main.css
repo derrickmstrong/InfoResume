@@ -78,14 +78,14 @@ a:hover {
   display: grid;
   gap: 25px 5px;
   grid-template-areas:
-    'name name name name name'
-    'infj profilepic profilepic profilepic intro'
-    'infj title title title availableon'
-    'leftright solutions solutions solutions availablefor'
-    'workexp main main main tech'
-    'topartists skills skills skills books'
-    'projects edu edu edu mytime'
-    'worklife worklife drinks drinks moreinfo';
+    'name name name'
+    'infj profilepic title'
+    'leftright intro availableon'
+    'solutions workexp availablefor'
+    'topartists main tech'
+    'topartists skills drinks'
+    'projects edu mytime'
+    'worklife books moreinfo';
 }
 
 .name {
@@ -93,7 +93,7 @@ a:hover {
 }
 .work-exp {
   grid-area: workexp;
-  width: 80%;
+  width: 100%;
 }
 .work-exp li {
   list-style: none;
@@ -127,6 +127,19 @@ a:hover {
 }
 .left-right {
   grid-area: leftright;
+}
+.left-right-img {
+  display: flex;
+  justify-content: start;
+}
+.left-right-img ul>li {
+  margin-left: -30px;
+  list-style-type: none;
+  padding-right:7px;
+  font-size: smaller;
+}
+.left-brain-logic, .right-brain-logic {
+  visibility: hidden;
 }
 .solutions {
   grid-area: solutions;
@@ -206,6 +219,15 @@ canvas {
   flex-wrap: row;
 }
 
+
+
+
+
+
+
+
+
+
 /* Media Queries */
 @media (max-width: 799px) {
   * {
@@ -236,7 +258,6 @@ canvas {
       'profilepic'
       'name'
       'intro'
-      'main'
       'title'
       'availableon'
       'availablefor'
@@ -255,14 +276,60 @@ canvas {
       'drinks'
       'moreinfo';
   }
-  img {
-    width: 70%;
+  .main {
+    display: none;
   }
+  img {
+    width: 50%;
+  }
+  .name {
+    margin-top: -25px;
+  }
+ .go-big {
+   font-size: 2em;
+}
+ .go-big strong {
+   font-size: 1em;
+}
   .intro {
     left: 0px;
     background: #05d655;
     width: 100%;
   }
+  .work-exp {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+  }
+
+  .left-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .left-right-img {
+    width: 30%;
+    position: relative;
+    left: -80px;
+  }
+  .infj-list, .xp-card ul>li {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .infj-align {
+    display: flex;
+    justify-content: center;
+  }
+  .xp-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
   .clocks {
     flex-direction: row;
     justify-content: center;
@@ -277,7 +344,7 @@ canvas {
   .ps,
   .id {
     padding-top: 25px;
-    width: 30%;
+    width: 25%;
   }
   .creative-cloud {
     align-items: center;

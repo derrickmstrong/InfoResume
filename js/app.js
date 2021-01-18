@@ -129,3 +129,39 @@ var ctx_digital = document.getElementById('digital').getContext('2d');
 var frontendChart = new Chart(ctx_front).Doughnut(frontend_data, options);
 var backendChart = new Chart(ctx_back).Doughnut(backend_data, options);
 var digitalChart = new Chart(ctx_digital).Doughnut(digital_data, options);
+
+// left-right brain
+const leftBrain = document.querySelector('#left-brain');
+const rightBrain = document.querySelector('#right-brain');
+const leftBrainLogic = document.querySelector('.left-brain-logic');
+const rightBrainLogic = document.querySelector('.right-brain-logic');
+
+leftBrain.addEventListener('mouseover', function () {
+  // hide leftbrain
+  rightBrain.style.visibility = 'hidden';
+  // show rightbrainlogic
+  leftBrainLogic.style.visibility = 'visible';
+  leftBrainLogic.style.transition = '.5s';
+});
+
+leftBrain.addEventListener('mouseout', function () {
+  // show leftbrain
+  rightBrain.style.visibility = 'visible';
+  // hide rightbrainlogic
+  leftBrainLogic.style.visibility = 'hidden';
+});
+
+rightBrain.addEventListener('mouseover', function () {
+  // hide rightbrain
+  leftBrain.style.visibility = 'hidden';
+  // show leftbrainlogic
+  rightBrainLogic.style.visibility = 'visible';
+  rightBrainLogic.style.transition = '2s';
+});
+
+rightBrain.addEventListener('mouseout', function () {
+  // show rightbrain
+  leftBrain.style.visibility = 'visible';
+  // hide leftbrainlogic
+  rightBrainLogic.style.visibility = 'hidden';
+});
